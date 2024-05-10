@@ -113,14 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  fetchAllPokemon(); // Assurez-vous que cette fonction est appelée après avoir défini tous les écouteurs d'événements
+  fetchAllPokemon();
 });
 
 window.addEventListener("load", function () {
-  setTimeout(
-    function openPopup() {
-      document.querySelector(".popup").style.display = "block";
-    },
-    1000 // Attendre 1 seconde avant d'afficher la pop-up
-  );
+  setTimeout(function openPopup() {
+    document.querySelector(".popup").style.display = "block";
+  }, 1000);
 });
